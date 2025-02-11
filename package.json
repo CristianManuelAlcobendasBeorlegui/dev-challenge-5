@@ -1,0 +1,10 @@
+{
+  "name": "dev-challenge-5",
+  "version": "0.0.1",
+  "description": "The high card game, where two players can play",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}

@@ -1,0 +1,769 @@
+/******************************************************************************
+
+[Global variables]
+
+******************************************************************************/
+:root {
+  --background-primary-color: #0e0e0e;
+  --background-secondary-color: #1e1e1e;
+  --background-tertiary-color: #282828;
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #d3d3d3;
+  --text-tertiary-color: #b3b3b3;
+  --error-color: #ff4646;
+  --featured-color: #00ffff;
+}
+
+/******************************************************************************
+
+[General styles]
+
+******************************************************************************/
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  color: inherit;
+  background: transparent;
+  line-height: 1.2;
+}
+
+body {
+  height: 100vh;
+}
+
+.featured-words {
+  color: var(--featured-color);
+  font-weight: 600;
+}
+
+/******************************************************************************
+
+[Game]
+
+******************************************************************************/
+.game {
+  display: grid;
+  grid-template-areas: "game__mainContent";
+  grid-template-rows: auto;
+  grid-auto-rows: 0;
+}
+
+.game__main-content {
+  grid-area: game__mainContent;
+}
+
+/******************************************************************************
+
+[Sections]
+
+******************************************************************************/
+.section {
+  height: 100%;
+  background: var(--background-secondary-color);
+  color: var(--text-primary-color);
+
+  &.section--game-window {
+    display: grid;
+    grid-auto-rows: 0;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: "section__header"
+      "section__mainContent";
+
+    .section__main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.section__header {
+  grid-area: section__header;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+  background: var(--background-primary-color);
+  padding: 1rem;
+}
+
+.section__heading {
+  &.section__heading--current-round {
+    text-align: center;
+  }
+}
+
+.section__heading-players {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.section__heading-player {
+  position: relative;
+  font-size: 600;
+  user-select: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
+
+.section__heading-player-icon {
+  font-size: 20px;
+}
+
+.section__heading-player-name {
+  font-size: 12px;
+}
+
+.section__heading-player-status {
+  --circle-size: 7px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background-color: white;
+  border-radius: 50%;
+
+  &.section__heading-player-status--online {
+    background: #00ff00;
+  }
+
+  &.section__heading-player-status--offline {
+    background: #808080;
+  }
+}
+
+.section__main-content {
+  grid-area: section__mainContent;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/******************************************************************************
+
+[Cards]
+
+******************************************************************************/
+.section__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.section__card {
+  width: 150px;
+  height: 200px;
+  border: 3px solid transparent;
+  border-radius: 1rem;
+
+  &:has(.section__card-input-field:checked) {
+    border-color: #fff;
+  }
+}
+
+.section__card-input-field {
+  &.hidden {
+    display: none;
+  }
+}
+
+.section__card {
+  &.lock {
+    pointer-events: none;
+  }
+
+  /* === Clubs === */
+  &.section__card--clubs-1 {
+    background: url("/img/clubs-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-2 {
+    background: url("/img/clubs-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-3 {
+    background: url("/img/clubs-3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-4 {
+    background: url("/img/clubs-4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-5 {
+    background: url("/img/clubs-5.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-6 {
+    background: url("/img/clubs-6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-7 {
+    background: url("/img/clubs-7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-8 {
+    background: url("/img/clubs-8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-9 {
+    background: url("/img/clubs-9.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-10 {
+    background: url("/img/clubs-10.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-j {
+    background: url("/img/clubs-j.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-q {
+    background: url("/img/clubs-q.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-k {
+    background: url("/img/clubs-k.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--clubs-as {
+    background: url("/img/clubs-as.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  /* === Diamonds === */
+  &.section__card--diamonds-1 {
+    background: url("/img/diamonds-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-2 {
+    background: url("/img/diamonds-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-3 {
+    background: url("/img/diamonds-3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-4 {
+    background: url("/img/diamonds-4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-5 {
+    background: url("/img/diamonds-5.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-6 {
+    background: url("/img/diamonds-6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-7 {
+    background: url("/img/diamonds-7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-8 {
+    background: url("/img/diamonds-8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-9 {
+    background: url("/img/diamonds-9.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-10 {
+    background: url("/img/diamonds-10.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-j {
+    background: url("/img/diamonds-j.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-q {
+    background: url("/img/diamonds-q.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-k {
+    background: url("/img/diamonds-k.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--diamonds-as {
+    background: url("/img/diamonds-as.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  /* === Hearts === */
+  &.section__card--hearts-1 {
+    background: url("/img/hearts-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-2 {
+    background: url("/img/hearts-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-3 {
+    background: url("/img/hearts-3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-4 {
+    background: url("/img/hearts-4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-5 {
+    background: url("/img/hearts-5.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-6 {
+    background: url("/img/hearts-6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-7 {
+    background: url("/img/hearts-7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-8 {
+    background: url("/img/hearts-8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-9 {
+    background: url("/img/hearts-9.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-10 {
+    background: url("/img/hearts-10.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-j {
+    background: url("/img/hearts-j.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-q {
+    background: url("/img/hearts-q.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-k {
+    background: url("/img/hearts-k.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--hearts-as {
+    background: url("/img/hearts-as.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  /* === Spades === */
+  &.section__card--spades-1 {
+    background: url("/img/spades-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-2 {
+    background: url("/img/spades-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-3 {
+    background: url("/img/spades-3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-4 {
+    background: url("/img/spades-4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-5 {
+    background: url("/img/spades-5.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-6 {
+    background: url("/img/spades-6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-7 {
+    background: url("/img/spades-7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-8 {
+    background: url("/img/spades-8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-9 {
+    background: url("/img/spades-9.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-10 {
+    background: url("/img/spades-10.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-j {
+    background: url("/img/spades-j.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-q {
+    background: url("/img/spades-q.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-k {
+    background: url("/img/spades-k.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  &.section__card--spades-as {
+    background: url("/img/spades-as.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  /* ===  Flipped === */
+  &.section__card--flipped {
+    background: url("/img/card-back.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+}
+
+.section__card-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section__error-message {
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+/******************************************************************************
+
+[Section button]
+
+******************************************************************************/
+.section__button {
+  padding: .75rem 2rem;
+
+  &.section__button--primary {
+    --skew: -25deg;
+
+    color: var(--featured-color);
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid var(--featured-color);
+    transform: skew(var(--skew));
+    background: linear-gradient(to right, var(--featured-color) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position .2s,
+      color .2s,
+      box-shadow .2s;
+
+    .section__button-text {
+      transform: skew(calc(var(--skew) * -1));
+    }
+
+    &:hover {
+      background-position: left;
+      color: black;
+      box-shadow: 0 0 20px var(--featured-color);
+    }
+  }
+}
+
+/******************************************************************************
+
+[Modals]
+
+******************************************************************************/
+.modal {
+  display: none;
+  user-select: none;
+
+  &.modal--info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    backdrop-filter: blur(1px);
+    z-index: 500;
+
+    &.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal__content {
+      width: 550px;
+      padding: 1rem;
+      border-radius: .5rem;
+
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--background-tertiary-color);
+      box-shadow: 0 0 3px white;
+    }
+  }
+}
+
+.modal__loader {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 11px dotted white;
+  border-radius: 10rem;
+
+  animation-name: loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__information {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary-color);
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 900px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 9rem;
+      }
+    }
+
+    .section__cards {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 6rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 700px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    &.section--game-window {
+      .section__main-content {
+        padding: 1rem 0;
+      }
+    }
+  }
+}

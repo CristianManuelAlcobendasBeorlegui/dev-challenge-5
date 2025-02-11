@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   height="800"
+   width="579.30939"
+   version="1.1"
+   id="Layer_1"
+   viewBox="0 0 370.75801 512"
+   xml:space="preserve"
+   sodipodi:docname="hearts-10.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs6" /><sodipodi:namedview
+   id="namedview6"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="0.97875"
+   inkscape:cx="289.14432"
+   inkscape:cy="400"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g6"
+   transform="translate(-70.621)">
+	<path
+   style="fill:#e6eef4"
+   d="M 423.724,0 H 88.276 C 78.522,0 70.621,7.901 70.621,17.655 v 476.69 c 0,9.754 7.901,17.655 17.655,17.655 h 335.448 c 9.754,0 17.655,-7.901 17.655,-17.655 V 17.655 C 441.379,7.901 433.479,0 423.724,0"
+   id="path1" />
+	<g
+   id="g5">
+		<path
+   style="fill:#d71e00"
+   d="m 97.103,141.241 c 0,4.875 3.952,8.828 8.828,8.828 4.875,0 8.828,-3.952 8.828,-8.828 V 35.31 c 0,-4.875 -3.952,-8.828 -8.828,-8.828 -4.875,0 -8.828,3.952 -8.828,8.828 z"
+   id="path2" />
+		<path
+   style="fill:#d71e00"
+   d="m 132.414,61.793 v 52.966 c 0,19.441 15.869,35.31 35.31,35.31 19.441,0 35.31,-15.869 35.31,-35.31 V 61.793 c 0,-19.441 -15.869,-35.31 -35.31,-35.31 -19.441,0 -35.31,15.869 -35.31,35.31 z m 52.965,0 v 52.966 c 0,9.69 -7.965,17.655 -17.655,17.655 -9.69,0 -17.655,-7.965 -17.655,-17.655 V 61.793 c 0,-9.69 7.965,-17.655 17.655,-17.655 9.69,0 17.655,7.965 17.655,17.655 z"
+   id="path3" />
+		<path
+   style="fill:#d71e00"
+   d="m 256,238.345 c 9.507,-24.214 29.625,-44.138 54.881,-44.138 21.257,0 40.201,9.993 52.966,26.483 16.013,20.692 27.33,66.754 -7.715,101.8 C 338.353,340.268 256,423.724 256,423.724 c 0,0 -82.353,-83.456 -100.131,-101.235 -35.046,-35.046 -23.729,-81.108 -7.715,-101.8 12.765,-16.49 31.709,-26.483 52.966,-26.483 25.255,0.001 45.373,19.925 54.88,44.139"
+   id="path4" />
+		<path
+   style="fill:#d71e00"
+   d="m 114.759,35.31 c 0,-4.875 -3.952,-8.828 -8.828,-8.828 -4.875,0 -8.828,3.952 -8.828,8.828 v 8.828 c 0,4.875 3.952,8.828 8.828,8.828 4.875,0 8.828,-3.952 8.828,-8.828 z"
+   id="path5" />
+	</g>
+</g>
+</svg>

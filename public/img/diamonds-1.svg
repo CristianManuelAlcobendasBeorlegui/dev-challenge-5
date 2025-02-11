@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="581.97864"
+   height="801.6712"
+   viewBox="0 0 581.97864 801.6712"
+   sodipodi:docname="diamonds-1.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.97875"
+     inkscape:cx="291.18774"
+     inkscape:cy="401.02171"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     id="g1"
+     transform="translate(-108,1)">
+    <path
+       style="display:inline;fill:#e5edf3;stroke:none"
+       d="m 132.10031,0.32172064 c -22.14949,4.17883296 -23,25.38342236 -23,43.53240936 v 135 432 120 c 0,16.15302 -4.04562,39.15833 3.37808,54 7.53839,15.07098 23.04711,15 37.62192,15 h 94 289 90 c 14.28345,0 31.08527,2.40771 45,-1.04321 21.54761,-5.34394 21,-27.1377 21,-44.95679 v -133 -439 -118 c 0,-15.364624 3.82184,-37.304993 -4.47913,-50.999207 -8.56219,-14.1251823 -24.17675,-13.00079269 -38.52087,-13.00079269 h -94 -284 -91 c -14.39906,0 -30.84322,-2.20330811 -45,0.46759033 z"
+       id="path1-8" />
+    <path
+       style="fill:#d71e02;stroke:none"
+       d="M 163,41.558655 C 145.50362,43.660156 151,70.750122 151,83 v 117 c 0,12.84625 -3.75496,36.06616 16,33.89124 C 183.4361,232.08173 178,203.37958 178,192 V 75 c 0,-11.317139 3.53554,-35.667664 -15,-33.441345 M 398,276 l -40.39969,51 -78.40048,98 -31.99999,40 -12.33256,17 7.13272,12 24,30 96,120 26.39969,33 L 399,687.79321 409.60031,677 436,644 l 96,-120 24,-30 7.13269,-12 -12.33252,-17 -32,-40 L 440.39969,327 400,276 Z"
+       id="path1" />
+  </g>
+</svg>

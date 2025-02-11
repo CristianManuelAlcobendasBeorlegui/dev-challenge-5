@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High card</title>
+  <link rel="shortcut icon" href="img/poker-cards-favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tabler-icons-3.24.0/webfont/tabler-icons.min.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body class="game">
+  <main class="game__main-content">
+    <section class="section section--game-window" id="game-window">
+      <div class="section__header">
+        <h1 class="section__heading section__heading--player-name">Player name</h1>
+        <!-- <h1 class="section__heading section__heading--current-round">Round 1</h1> -->
+        <div class="section__heading-players">
+          <div class="section__heading-player section__heading-player--1">
+            <i class="section__heading-player-icon ti ti-user-filled"></i>
+            <span class="section__heading-player-name">Player 1</span>
+            <div class="section__heading-player-status section__heading-player-status--online" title="online"></div>
+          </div>
+          <div class="section__heading-player section__heading-player--2">
+            <i class="section__heading-player-icon ti ti-user-filled"></i>
+            <span class="section__heading-player-name">Player 2</span>
+            <div class="section__heading-player-status section__heading-player-status--offline" title="offline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section__main-content">
+        <div class="section__cards">
+          <div class="section__card section__card--spades-4 section__card--flipped">
+            <input class="section__card-input-field hidden" type="radio" name="card" id="card--spades-4">
+            <label class="section__card-label" for="card--spades-4"></label>
+          </div>
+          <div class="section__card section__card--hearts-4 section__card--flipped">
+            <input class="section__card-input-field hidden" type="radio" name="card" id="card--hearts-4">
+            <label class="section__card-label" for="card--hearts-4"></label>
+          </div>
+          <div class="section__card section__card--diamonds-4 section__card--flipped">
+            <input class="section__card-input-field hidden" type="radio" name="card" id="card--diamonds-4">
+            <label class="section__card-label" for="card--diamonds-4"></label>
+          </div>
+          <div class="section__card section__card--clubs-4 section__card--flipped">
+            <input class="section__card-input-field hidden" type="radio" name="card" id="card--clubs-4">
+            <label class="section__card-label" for="card--clubs-4"></label>
+          </div>
+          <div class="section__card section__card--hearts-as section__card--flipped">
+            <input class="section__card-input-field hidden" type="radio" name="card" id="card--hearts-as">
+            <label class="section__card-label" for="card--hearts-as"></label>
+          </div>
+        </div>
+        <span class="section__error-message"></span>
+        <div class="section__options">
+          <div class="section__option section__option--confirm-card">
+            <button class="section__button section__button--primary section__button--confirm-card">
+              <div class="section__button-text">Choose card</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modals">
+    <div class="modal modal--info">
+      <div class="modal__content">
+        <div class="modal__loader modal__loader--dots"></div>
+        <span class="modal__information">Something fun</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
